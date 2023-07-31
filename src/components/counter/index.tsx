@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-export const Counter:any = ({stock,name,imagen, price}) => {
+export const Counter:any = ({stock,name,imagen,price}) => {
     const [count, setCount] = useState(0);
     function add() {
         console.log("Hola");
