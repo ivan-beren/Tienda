@@ -10,7 +10,7 @@ export const Counter:any = ({stock,name,imagen,price}) => {
     }
     function remove() {
         console.log();
-        if (count > 0) {
+        if (count > 1) {
             setCount(count - 1);
         }
     }
