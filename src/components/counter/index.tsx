@@ -1,7 +1,8 @@
-import React, { useState } from 'react'
+import React, { FC, useState } from 'react'
+import { CounterProps } from './interfaces';
 
-export const Counter:any = ({stock,name,imagen,price}) => {
-    const [count, setCount] = useState(0);
+export const Counter:FC<CounterProps> = ({stock,name,imagen,price}) => {
+    const [count, setCount] = useState<number>(0);
     function add() {
         console.log("Hola");
         if (count < stock) {
@@ -10,7 +11,7 @@ export const Counter:any = ({stock,name,imagen,price}) => {
     }
     function remove() {
         console.log();
-        if (count > 1) {
+        if (count > 0) {
             setCount(count - 1);
         }
     }
